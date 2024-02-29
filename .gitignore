@@ -1,0 +1,48 @@
+# Go binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go generated files
+*.test
+*.prof
+
+# Compiled Object files, Static and Dynamic libs
+*.o
+*.a
+*.so
+
+# Log files and Database files
+*.log
+*.sql
+*.sqlite
+
+# Compiled Binary files
+*.bin
+
+# Dependency directories
+vendor/
+
+# Tailwind CSS build files
+view/public/styles.css
+
+# Hyperscript build files
+/build/
+
+# Templ build files
+/.templ/
+view/**/*.txt
+view/**/*.go
+
+# Environment variables file
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
