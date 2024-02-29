@@ -1,4 +1,4 @@
-module github.com/CRSylar/red_tetris
+module github.com/CRSylar/hattory
 
 go 1.22.0
 

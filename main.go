@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/CRSylar/red_tetris/cmd"
-	"github.com/CRSylar/red_tetris/handlers"
-	"github.com/CRSylar/red_tetris/view/pages"
+	"github.com/CRSylar/hattory/cmd"
+	"github.com/CRSylar/hattory/handlers"
+	"github.com/CRSylar/hattory/view/pages"
 	"github.com/a-h/templ"
 )
 

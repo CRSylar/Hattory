@@ -1,23 +1,23 @@
 package pages
 
 import (
-  "github.com/CRSylar/red_tetris/handlers"
+	"github.com/CRSylar/hattory/handlers"
 )
 
 templ Layout(props *handlers.TempleComponentProps) {
-  <html>
-    <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <title>Hello!</title>
-      <script src="/lib/htmx.js"></script>
-      <script src="/lib/_hyperscript.js"></script>
-      <link rel="stylesheet" href="/view/public/styles.css"></link>
-    </head>
-    <body class="min-h-screen bg-slate-200 dark:bg-slate-800">
-      for _, c := range props.Component {
-        @c
-      }
-    </body>
-  </html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<title>Hello!</title>
+			<script src="/lib/htmx.js"></script>
+			<script src="/lib/_hyperscript.js"></script>
+			<link rel="stylesheet" href="/view/public/styles.css"/>
+		</head>
+		<body class="min-h-screen bg-slate-200 dark:bg-slate-800">
+			for _, c := range props.Component {
+				@c
+			}
+		</body>
+	</html>
 }
