@@ -3,17 +3,16 @@ package main
 import (
 	"github.com/CRSylar/hattory/cmd"
 	"github.com/CRSylar/hattory/handlers"
-	"github.com/CRSylar/hattory/view/pages"
-	"github.com/a-h/templ"
 )
 
 func main() {
 
-	m := handlers.CreateServeMux()
-
-	handlers.Get("/", pages.Layout, []templ.Component{pages.Page(nil)})
-
-	s := cmd.NewServer(m)
-
+	// Create a new ServeMux - Request Handler
+	h := handlers.CreateRequestsHandler()
+	handlers.RegisterRoutes()
+	handlers.RegisterApiRoutes()
+	// Create a new Server
+	s := cmd.NewServer(h)
+	// Start the server
 	cmd.StartServer(s)
 }

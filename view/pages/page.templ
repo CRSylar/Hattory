@@ -1,11 +1,12 @@
 package pages
 
 import (
-	"github.com/CRSylar/hattory/handlers"
+	"github.com/CRSylar/hattory/view/components"
 )
 
-templ Page(props *handlers.TempleComponentProps) {
-	<div class="">
+templ Page() {
+	<main class="dark:text-white">
+		@components.Header("Header")
 		<h1>Page</h1>
-	</div>
+	</main>
 }
